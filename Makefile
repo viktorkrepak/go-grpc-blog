@@ -34,7 +34,7 @@ $(project):
 	go build -o ${BIN_DIR}/${CLIENT_BIN} ./${CLIENT_DIR}
 
 clean_blog: ## Clean generated files for blog
-	${RM_F_CMD} blog/${PROTO_DIR}/*.pb.go
+	${RM_F_CMD} ${PROTO_DIR}/*.pb.go
 
 rebuild: clean all ## Rebuild the whole project
 
